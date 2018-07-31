@@ -20,8 +20,8 @@ class pgSeguro {
     private $url = 'https://ws.sandbox.pagseguro.uol.com.br/v2/checkout/';
 
     # Email e Token para autenticação
-    private $emailAutenticacao = 'diegolottermann@gmail.com';
-    private $token = '0BB294A0A9FF4444BBCE686EA4E829C7'; //token 
+    private $emailAutenticacao = 'XXXXXXXXX';
+    private $token = 'XXXXXXXXXXxx'; //token 
 
     public function pgSeguro() {
         
@@ -64,8 +64,8 @@ class pgSeguro {
         $data['senderName'] = 'João da Silva'; #Nome do cliente Ex: João da Silva
         $data['senderAreaCode'] = '54'; #DDD do cliente Ex: 55,54,11 (Máx: 2 digitos) - Opcional
         $data['senderPhone'] = '99335579'; #Numero de Telefone do cliente Ex: 987654321 (Máx: 9 digitos) - Opcional
-        $data['senderEmail'] = 'c76521939531339033807@sandbox.pagseguro.com.br'; #Email do cliente Ex: joao.silva@metasig.com.br
-//Password -> cvjDlbT4pdkX8Ne1
+        $data['senderEmail'] = 'XXXXXXXXX'; #Email do cliente Ex: joao.silva@empresa.com.br
+
         /*  Fim da seção de dados do cliente */
 
         /* Inicio da seção de dados de endereço */
@@ -85,7 +85,7 @@ class pgSeguro {
         /* Fim da seção de endereço */
 
         #URL redirecionamento	
-        //$data['redirectURL'] = 'http://www.tudoem.com.br/';
+        //$data['redirectURL'] = 'http://www.site.com.br/';
         #Transformando o array em formato de URL, para ser interpretado pelo pagseguro  
         $data = http_build_query($data);
 

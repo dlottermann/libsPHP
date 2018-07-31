@@ -2,8 +2,8 @@
 if (isset($_POST['notificationType']) && $_POST['notificationType'] == 'transaction') {
     //Todo resto do código iremos inserir aqui.
     # Email e Token para autenticação
-    $email = 'diegolottermann@gmail.com';
-    $token = '0BB294A0A9FF4444BBCE686EA4E829C7'; //'4B4F61C1B3AD4A11A264719A4A70152E'; token antigo
+    $email = 'XXXXX';
+    $token = 'XXXXXX'; 
     /* $url = 'https://ws.pagseguro.uol.com.br/v2/transactions/notifications/' . $_POST['notificationCode'] . '?email=' . $email . '&token=' . $token; */
 
     $url = 'https://ws.sandbox.pagseguro.uol.com.br/v3/transactions/notifications/' . $_POST['notificationCode'] . '?email=' . $email . '&token=' . $token;
